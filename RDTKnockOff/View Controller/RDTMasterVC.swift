@@ -36,6 +36,7 @@ class RDTMasterVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         fetchData()
+        self.title = "Top Feed"
     }
     
     override func didReceiveMemoryWarning() {

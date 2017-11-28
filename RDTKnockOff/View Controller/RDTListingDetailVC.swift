@@ -38,7 +38,7 @@ extension RDTListingDetailVC {
     // MARK: - UpdateView
     func updateView() {
         thumbnailImageView.imageFromServerURL(urlString: listingData?.thumbnailUrl)
-        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Add", style: .plain, target: self, action: #selector(saveTapped))
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Save", style: .plain, target: self, action: #selector(saveTapped))
         
     }
     
