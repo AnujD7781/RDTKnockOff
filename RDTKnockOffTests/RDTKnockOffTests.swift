@@ -11,26 +11,38 @@ import XCTest
 
 class RDTKnockOffTests: XCTestCase {
     
+    var fileManager:FileManager!
+    var bundle:Bundle!
+    
     override func setUp() {
         super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        fileManager = FileManager.default
+        bundle = Bundle(for: RDTKnockOffTests.self)
     }
     
     override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
         super.tearDown()
     }
     
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-    
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
+    func testRDTListings() {
+        let data = fileManager.contents(atPath: bundle.path(forResource: "RDTMockResponse", ofType: "json")!)
+        XCTAssertNotNil(data)
+        
+        let userJSONFromData = try? JSONSerialization.jsonObject(with: data!, options: JSONSerialization.ReadingOptions(rawValue: 0))
+        XCTAssertNotNil(userJSONFromData)
+        XCTAssertTrue(userJSONFromData is [String: Any])
+        let dataDict = userJSONFromData as! [String: Any]
+        
+        let topData = RDTTopData()
+        topData.parse(dataDict["data"] as? [String: Any])
+        XCTAssertEqual(topData.listingArr.count, 1)
+        
+        let listingData = topData.listingArr[0]
+        XCTAssertEqual(listingData.title, "Infant unit nurses when the earthquake hits the hospital")
+        XCTAssertEqual(listingData.thumbnailUrl, "https://b.thumbs.redditmedia.com/ryagROAh_VCI7rInrztRe-YkC-FxY54DLiE3RXe9s5U.jpg")
+        XCTAssertEqual(listingData.author, "slightlysadist")
+        XCTAssertEqual(listingData.numComments, 3795)
+
     }
     
 }
