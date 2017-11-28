@@ -13,6 +13,22 @@
 		D41B99B01FCD01F300DB2C4A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D41B99AF1FCD01F300DB2C4A /* Assets.xcassets */; };
 		D41B99B31FCD01F300DB2C4A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D41B99B11FCD01F300DB2C4A /* LaunchScreen.storyboard */; };
 		D41B99BE1FCD01F300DB2C4A /* RDTKnockOffTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41B99BD1FCD01F300DB2C4A /* RDTKnockOffTests.swift */; };
+		D41B99CE1FCD04E600DB2C4A /* RDTMockResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = D41B99CD1FCD04E600DB2C4A /* RDTMockResponse.json */; };
+		D41B99D21FCD054C00DB2C4A /* RDTBaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41B99CF1FCD054C00DB2C4A /* RDTBaseModel.swift */; };
+		D41B99D31FCD054C00DB2C4A /* RDTBaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41B99CF1FCD054C00DB2C4A /* RDTBaseModel.swift */; };
+		D41B99D41FCD054C00DB2C4A /* RDTListingData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41B99D01FCD054C00DB2C4A /* RDTListingData.swift */; };
+		D41B99D51FCD054C00DB2C4A /* RDTListingData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41B99D01FCD054C00DB2C4A /* RDTListingData.swift */; };
+		D41B99D61FCD054C00DB2C4A /* RDTTopData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41B99D11FCD054C00DB2C4A /* RDTTopData.swift */; };
+		D41B99D71FCD054C00DB2C4A /* RDTTopData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41B99D11FCD054C00DB2C4A /* RDTTopData.swift */; };
+		D41B99DB1FCD056F00DB2C4A /* RDTParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41B99D81FCD056E00DB2C4A /* RDTParser.swift */; };
+		D41B99DC1FCD056F00DB2C4A /* RDTImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41B99D91FCD056E00DB2C4A /* RDTImageViewExtension.swift */; };
+		D41B99DD1FCD056F00DB2C4A /* RDTDateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41B99DA1FCD056F00DB2C4A /* RDTDateExtension.swift */; };
+		D41B99DE1FCD057700DB2C4A /* RDTParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41B99D81FCD056E00DB2C4A /* RDTParser.swift */; };
+		D41B99DF1FCD057A00DB2C4A /* RDTDateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41B99DA1FCD056F00DB2C4A /* RDTDateExtension.swift */; };
+		D41B99E11FCD0D2D00DB2C4A /* RDTMasterVCDataExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41B99E01FCD0D2D00DB2C4A /* RDTMasterVCDataExtension.swift */; };
+		D41B99E31FCD0EA400DB2C4A /* RDTMasterVCViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41B99E21FCD0EA400DB2C4A /* RDTMasterVCViewExtension.swift */; };
+		D41B99E61FCD114F00DB2C4A /* RDTListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41B99E41FCD114F00DB2C4A /* RDTListCell.swift */; };
+		D41B99E71FCD114F00DB2C4A /* RDTListingDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41B99E51FCD114F00DB2C4A /* RDTListingDetailVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +52,17 @@
 		D41B99B91FCD01F300DB2C4A /* RDTKnockOffTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RDTKnockOffTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D41B99BD1FCD01F300DB2C4A /* RDTKnockOffTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RDTKnockOffTests.swift; sourceTree = "<group>"; };
 		D41B99BF1FCD01F300DB2C4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D41B99CD1FCD04E600DB2C4A /* RDTMockResponse.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = RDTMockResponse.json; sourceTree = "<group>"; };
+		D41B99CF1FCD054C00DB2C4A /* RDTBaseModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RDTBaseModel.swift; sourceTree = "<group>"; };
+		D41B99D01FCD054C00DB2C4A /* RDTListingData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RDTListingData.swift; sourceTree = "<group>"; };
+		D41B99D11FCD054C00DB2C4A /* RDTTopData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RDTTopData.swift; sourceTree = "<group>"; };
+		D41B99D81FCD056E00DB2C4A /* RDTParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RDTParser.swift; sourceTree = "<group>"; };
+		D41B99D91FCD056E00DB2C4A /* RDTImageViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RDTImageViewExtension.swift; sourceTree = "<group>"; };
+		D41B99DA1FCD056F00DB2C4A /* RDTDateExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RDTDateExtension.swift; sourceTree = "<group>"; };
+		D41B99E01FCD0D2D00DB2C4A /* RDTMasterVCDataExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RDTMasterVCDataExtension.swift; sourceTree = "<group>"; };
+		D41B99E21FCD0EA400DB2C4A /* RDTMasterVCViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RDTMasterVCViewExtension.swift; sourceTree = "<group>"; };
+		D41B99E41FCD114F00DB2C4A /* RDTListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RDTListCell.swift; sourceTree = "<group>"; };
+		D41B99E51FCD114F00DB2C4A /* RDTListingDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RDTListingDetailVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +117,7 @@
 		D41B99BC1FCD01F300DB2C4A /* RDTKnockOffTests */ = {
 			isa = PBXGroup;
 			children = (
+				D41B99CD1FCD04E600DB2C4A /* RDTMockResponse.json */,
 				D41B99BD1FCD01F300DB2C4A /* RDTKnockOffTests.swift */,
 				D41B99BF1FCD01F300DB2C4A /* Info.plist */,
 			);
@@ -117,6 +145,9 @@
 		D41B99CA1FCD027A00DB2C4A /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				D41B99DA1FCD056F00DB2C4A /* RDTDateExtension.swift */,
+				D41B99D91FCD056E00DB2C4A /* RDTImageViewExtension.swift */,
+				D41B99D81FCD056E00DB2C4A /* RDTParser.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -124,6 +155,9 @@
 		D41B99CB1FCD028D00DB2C4A /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				D41B99CF1FCD054C00DB2C4A /* RDTBaseModel.swift */,
+				D41B99D01FCD054C00DB2C4A /* RDTListingData.swift */,
+				D41B99D11FCD054C00DB2C4A /* RDTTopData.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -131,7 +165,11 @@
 		D41B99CC1FCD02A000DB2C4A /* View Controller */ = {
 			isa = PBXGroup;
 			children = (
+				D41B99E41FCD114F00DB2C4A /* RDTListCell.swift */,
+				D41B99E51FCD114F00DB2C4A /* RDTListingDetailVC.swift */,
 				D41B99AA1FCD01F300DB2C4A /* RDTMasterVC.swift */,
+				D41B99E01FCD0D2D00DB2C4A /* RDTMasterVCDataExtension.swift */,
+				D41B99E21FCD0EA400DB2C4A /* RDTMasterVCViewExtension.swift */,
 			);
 			path = "View Controller";
 			sourceTree = "<group>";
@@ -229,6 +267,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D41B99CE1FCD04E600DB2C4A /* RDTMockResponse.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,7 +278,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D41B99D21FCD054C00DB2C4A /* RDTBaseModel.swift in Sources */,
+				D41B99D41FCD054C00DB2C4A /* RDTListingData.swift in Sources */,
 				D41B99AB1FCD01F300DB2C4A /* RDTMasterVC.swift in Sources */,
+				D41B99E11FCD0D2D00DB2C4A /* RDTMasterVCDataExtension.swift in Sources */,
+				D41B99E31FCD0EA400DB2C4A /* RDTMasterVCViewExtension.swift in Sources */,
+				D41B99DB1FCD056F00DB2C4A /* RDTParser.swift in Sources */,
+				D41B99D61FCD054C00DB2C4A /* RDTTopData.swift in Sources */,
+				D41B99E71FCD114F00DB2C4A /* RDTListingDetailVC.swift in Sources */,
+				D41B99DC1FCD056F00DB2C4A /* RDTImageViewExtension.swift in Sources */,
+				D41B99E61FCD114F00DB2C4A /* RDTListCell.swift in Sources */,
+				D41B99DD1FCD056F00DB2C4A /* RDTDateExtension.swift in Sources */,
 				D41B99A91FCD01F300DB2C4A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -249,6 +298,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				D41B99BE1FCD01F300DB2C4A /* RDTKnockOffTests.swift in Sources */,
+				D41B99D31FCD054C00DB2C4A /* RDTBaseModel.swift in Sources */,
+				D41B99DF1FCD057A00DB2C4A /* RDTDateExtension.swift in Sources */,
+				D41B99D71FCD054C00DB2C4A /* RDTTopData.swift in Sources */,
+				D41B99D51FCD054C00DB2C4A /* RDTListingData.swift in Sources */,
+				D41B99DE1FCD057700DB2C4A /* RDTParser.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
