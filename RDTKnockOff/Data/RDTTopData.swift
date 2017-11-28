@@ -9,7 +9,8 @@
 import Foundation
 
 class RDTTopData: RDTBaseModel, NSCoding {
-    
+    private let _afterKey = "after"
+    private let _listingArrKey = "listingArr"
     private var before : String?
     private var after : String?
     private let limit = 10
@@ -42,16 +43,16 @@ class RDTTopData: RDTBaseModel, NSCoding {
     }
     
     required init(coder aDecoder: NSCoder) {
-        after = aDecoder.decodeObject(forKey: "after") as? String
-        guard let arr = aDecoder.decodeObject(forKey: "listingArr") else {
+        after = aDecoder.decodeObject(forKey: _afterKey) as? String
+        guard let arr = aDecoder.decodeObject(forKey: _listingArrKey) else {
             return
         }
         listingArr = arr as! [RDTListingData]
     }
     
     func encode(with aCoder: NSCoder) {
-        aCoder.encode(after, forKey: "after")
-        aCoder.encode(listingArr, forKey: "listingArr")
+        aCoder.encode(after, forKey: _afterKey)
+        aCoder.encode(listingArr, forKey: _listingArrKey)
         
     }
 }
