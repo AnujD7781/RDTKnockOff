@@ -11,7 +11,9 @@ import UIKit
 class RDTMasterVC: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     
-    private let encodingTopDataKey = "encodedToDoData"
+    let encodingTopDataKey = "encodedTopData"
+    let contentOffsetY = "contentOffsetY"
+    let heights = "heights"
     var topData = RDTTopData()
     var cellHeights: [IndexPath : CGFloat] = [:]
     var selectedIndexPath : IndexPath?
