@@ -15,7 +15,7 @@ class RDTListingData: RDTBaseModel, NSCoding {
     }
     
     public var id : Int?
-    public var numComments : Double?
+    public var numComments : Int?
     public var title : String?
     public var author : String?
     public var thumbnailUrl : String?
@@ -38,7 +38,7 @@ class RDTListingData: RDTBaseModel, NSCoding {
             title = RDTParser.getString(listingData[_titleKey])
             author = RDTParser.getString(listingData[_authorKey])
             thumbnailUrl = RDTParser.getString(listingData[_thumbnailKey])
-            numComments = RDTParser.getDouble(listingData[_numCommentsKey])
+            numComments = RDTParser.getInt(listingData[_numCommentsKey])
         }
     }
     
@@ -46,14 +46,14 @@ class RDTListingData: RDTBaseModel, NSCoding {
         title = aDecoder.decodeObject(forKey: _titleKey) as? String
         thumbnailUrl = aDecoder.decodeObject(forKey: _thumbnailKey) as? String
         author = aDecoder.decodeObject(forKey: _authorKey) as? String
-        numComments = aDecoder.decodeObject(forKey: _numCommentsKey) as? Double
+        numComments = aDecoder.decodeObject(forKey: _numCommentsKey) as? Int
         createdAt = aDecoder.decodeObject(forKey: _createdKey) as? Date
     }
     
     func encode(with aCoder: NSCoder) {
         aCoder.encode(title, forKey: _titleKey)
         aCoder.encode(author, forKey: _authorKey)
-        aCoder.encode(createdTimeInterval, forKey: _createdKey)
+        aCoder.encode(thumbnailUrl, forKey: _thumbnailKey)
         aCoder.encode(numComments, forKey: _numCommentsKey)
         aCoder.encode(createdAt, forKey: _createdKey)
         
