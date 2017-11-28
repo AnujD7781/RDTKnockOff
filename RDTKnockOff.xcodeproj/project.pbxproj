@@ -25,6 +25,10 @@
 		D41B99DD1FCD056F00DB2C4A /* RDTDateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41B99DA1FCD056F00DB2C4A /* RDTDateExtension.swift */; };
 		D41B99DE1FCD057700DB2C4A /* RDTParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41B99D81FCD056E00DB2C4A /* RDTParser.swift */; };
 		D41B99DF1FCD057A00DB2C4A /* RDTDateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41B99DA1FCD056F00DB2C4A /* RDTDateExtension.swift */; };
+		D41B99E11FCD0D2D00DB2C4A /* RDTMasterVCDataExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41B99E01FCD0D2D00DB2C4A /* RDTMasterVCDataExtension.swift */; };
+		D41B99E31FCD0EA400DB2C4A /* RDTMasterVCViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41B99E21FCD0EA400DB2C4A /* RDTMasterVCViewExtension.swift */; };
+		D41B99E61FCD114F00DB2C4A /* RDTListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41B99E41FCD114F00DB2C4A /* RDTListCell.swift */; };
+		D41B99E71FCD114F00DB2C4A /* RDTListingDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41B99E51FCD114F00DB2C4A /* RDTListingDetailVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +59,10 @@
 		D41B99D81FCD056E00DB2C4A /* RDTParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RDTParser.swift; sourceTree = "<group>"; };
 		D41B99D91FCD056E00DB2C4A /* RDTImageViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RDTImageViewExtension.swift; sourceTree = "<group>"; };
 		D41B99DA1FCD056F00DB2C4A /* RDTDateExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RDTDateExtension.swift; sourceTree = "<group>"; };
+		D41B99E01FCD0D2D00DB2C4A /* RDTMasterVCDataExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RDTMasterVCDataExtension.swift; sourceTree = "<group>"; };
+		D41B99E21FCD0EA400DB2C4A /* RDTMasterVCViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RDTMasterVCViewExtension.swift; sourceTree = "<group>"; };
+		D41B99E41FCD114F00DB2C4A /* RDTListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RDTListCell.swift; sourceTree = "<group>"; };
+		D41B99E51FCD114F00DB2C4A /* RDTListingDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RDTListingDetailVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,7 +165,11 @@
 		D41B99CC1FCD02A000DB2C4A /* View Controller */ = {
 			isa = PBXGroup;
 			children = (
+				D41B99E41FCD114F00DB2C4A /* RDTListCell.swift */,
+				D41B99E51FCD114F00DB2C4A /* RDTListingDetailVC.swift */,
 				D41B99AA1FCD01F300DB2C4A /* RDTMasterVC.swift */,
+				D41B99E01FCD0D2D00DB2C4A /* RDTMasterVCDataExtension.swift */,
+				D41B99E21FCD0EA400DB2C4A /* RDTMasterVCViewExtension.swift */,
 			);
 			path = "View Controller";
 			sourceTree = "<group>";
@@ -269,9 +281,13 @@
 				D41B99D21FCD054C00DB2C4A /* RDTBaseModel.swift in Sources */,
 				D41B99D41FCD054C00DB2C4A /* RDTListingData.swift in Sources */,
 				D41B99AB1FCD01F300DB2C4A /* RDTMasterVC.swift in Sources */,
+				D41B99E11FCD0D2D00DB2C4A /* RDTMasterVCDataExtension.swift in Sources */,
+				D41B99E31FCD0EA400DB2C4A /* RDTMasterVCViewExtension.swift in Sources */,
 				D41B99DB1FCD056F00DB2C4A /* RDTParser.swift in Sources */,
 				D41B99D61FCD054C00DB2C4A /* RDTTopData.swift in Sources */,
+				D41B99E71FCD114F00DB2C4A /* RDTListingDetailVC.swift in Sources */,
 				D41B99DC1FCD056F00DB2C4A /* RDTImageViewExtension.swift in Sources */,
+				D41B99E61FCD114F00DB2C4A /* RDTListCell.swift in Sources */,
 				D41B99DD1FCD056F00DB2C4A /* RDTDateExtension.swift in Sources */,
 				D41B99A91FCD01F300DB2C4A /* AppDelegate.swift in Sources */,
 			);
