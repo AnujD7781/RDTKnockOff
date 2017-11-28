@@ -25,6 +25,14 @@ class RDTParser {
         return nil
     }
     
+    static func getInt(_ int: Any?) -> Int? {
+        guard let intData = int else {return nil}
+        if intData is Double {
+            return intData as? Int
+        }
+        return nil
+    }
+    
     static func getDict(_ dict: [String : Any]?) -> [String : Any]? {
         guard let dictData = dict else {return nil}
         return dictData
